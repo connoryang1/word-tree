@@ -1,5 +1,6 @@
 from dendropy import Tree, TaxonNamespace
 
+
 def create_tree(words: list) -> Tree:
     taxon_namespace = TaxonNamespace(list("abcdefghijklmnoprqstuvwyxz"))
     tree = Tree(taxon_namespace=taxon_namespace)
@@ -57,6 +58,7 @@ def main():
             width=(len(words) + 1) * 3,
         )
     )
+
 
 if __name__ == "__main__":
     main()
